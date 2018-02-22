@@ -6,13 +6,12 @@ import pandas as pd
 import tensorflow as tf
 import random as rn
 import os
+import time
 from keras import backend as K
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import FeatureUnion
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from wordbatch.models import FM_FTRL
 from subprocess import check_output
-import time
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler, StandardScaler
